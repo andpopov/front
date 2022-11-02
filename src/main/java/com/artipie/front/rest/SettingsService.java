@@ -34,12 +34,11 @@ public class SettingsService extends BaseService {
 
     /**
      * Obtain list of repository names.
-     * @param token Token.
      * @return List of repository names.
      */
-    public Layout layout(final String token) {
+    public Layout layout() {
         return BaseService.handle(
-            this.httpGet(Optional.of(token), SettingsService.LAYOUT_PATH),
+            this.httpGet(Optional.empty(), SettingsService.LAYOUT_PATH),
             res -> {
                 final JsonObject json = BaseService.jsonObject(res);
                 return Layout.byName(json.getString("layout"));
