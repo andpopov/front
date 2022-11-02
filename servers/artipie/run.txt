@@ -1,0 +1,2 @@
+app: com.artipie.VertxMain
+args: --config-file=C:\projects\artipie\server\artipie.yml --port=8081

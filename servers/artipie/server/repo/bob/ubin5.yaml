@@ -1,0 +1,5 @@
+repo:
+  type: binary
+  storage:
+    type: fs
+    path: "C:\\projects\\artipie\\server\\data1"

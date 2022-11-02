@@ -1,0 +1,12 @@
+meta:
+  storage:
+    type: fs
+    path: C:\projects\artipie\server\repo\ #path to repository configurations
+  layout: org
+  credentials:
+    - 
+      type: file
+      path: _cred.yml
+    - 
+      type: github
+

@@ -1,0 +1,9 @@
+repo:
+  type: maven
+  storage: default
+  permissions:
+    bobik:
+      - upload
+      - download
+    '*':
+      - download

@@ -1,0 +1,9 @@
+repo:
+  type: docker
+  storage: default
+  permissions:
+    bob:
+      - upload
+      - download1
+    '*':
+      - download1

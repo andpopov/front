@@ -1,0 +1,2 @@
+app: com.artipie.front.Service
+args: -p 7070

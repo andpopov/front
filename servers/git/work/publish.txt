@@ -1,0 +1,3 @@
+npm publish @hello/simple-npm-project --registry=http://artipie:8080/my-npm
+
+npm publish @hello/greeting --registry=http://artipie:8080/my-npm

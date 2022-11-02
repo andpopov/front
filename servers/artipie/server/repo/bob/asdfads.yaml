@@ -1,0 +1,9 @@
+repo:
+  type: maven
+  storage: default1
+  permissions:
+    bob:
+      - upload
+      - download
+    '*':
+      - download

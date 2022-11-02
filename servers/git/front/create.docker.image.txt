@@ -1,0 +1,14 @@
+0. mvn clean install
+1. edit pom.xml
+  set <phase>install</phase>:
+
+          <plugin>
+            <groupId>com.spotify</groupId>
+            <artifactId>dockerfile-maven-plugin</artifactId>
+            <version>1.4.13</version>
+            <executions>
+              <execution>
+                <id>default</id>
+                <phase>install</phase>
+
+2. mvn -B install -Pdocker-build

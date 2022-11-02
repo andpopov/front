@@ -1,0 +1,3 @@
+credentials:
+  bob:
+    pass: plain:qwerty

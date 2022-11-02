@@ -1,0 +1,5 @@
+credentials:
+  bob:
+    type: plain
+    pass: qwerty
+    email: jane@example.com # Optional
