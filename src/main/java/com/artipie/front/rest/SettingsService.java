@@ -5,13 +5,8 @@
 package com.artipie.front.rest;
 
 import com.artipie.front.Layout;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
-import javax.json.Json;
-import javax.json.JsonArray;
 import javax.json.JsonObject;
-import javax.json.JsonValue;
 
 /**
  * Settings-service.
@@ -47,7 +42,7 @@ public class SettingsService extends BaseService {
             this.httpGet(Optional.of(token), SettingsService.LAYOUT_PATH),
             res -> {
                 final JsonObject json = BaseService.jsonObject(res);
-                return Layout.valueOf(json.getString("layout"));
+                return Layout.byName(json.getString("layout"));
             }
         );
     }
